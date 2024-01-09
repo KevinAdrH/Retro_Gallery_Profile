@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Six+Caps");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "VT323", monospace;
+}
+/* JUDUL RETRO GALLERY */
+h3 {
+  padding-top: 80px;
+  color: white;
+  text-shadow: 2px 1px rgb(85, 10, 0), 4px 2px rgb(90, 15, 5);
+}
+.vintage {
+  font-family: "Six Caps", sans-serif;
+  font-size: 130px;
+  letter-spacing: 10px;
+  margin: 0;
+  z-index: -999;
+}
+
+.vintage-text {
+  text-shadow: 2px 1px rgb(85, 10, 0), 4px 2px rgb(90, 15, 5),
+    6px 4px rgb(100, 20, 15), 8px 5px rgb(105, 25, 20),
+    10px 6px rgb(110, 30, 25), 12px 7px rgb(115, 30, 30),
+    14px 8px rgb(120, 30, 35), 16px 9px black, 18px 10px black, 20px 11px black,
+    22px 12px black, 24px 13px black, 28px 14px rgba(0, 0, 0, 0.9),
+    30px 15px rgba(0, 0, 0, 0.7), 32px 16px rgba(0, 0, 0, 0.5),
+    34px 17px rgba(0, 0, 0, 0.3), 36px 18px rgba(0, 0, 0, 0.1),
+    40px 20px rgba(0, 0, 0, 0.1);
+  z-index: -999;
+}
+.vintage__container {
+  margin-top: 100px;
+  text-align: center;
+}
+/* JUDUL RETRO GALLERY END */
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 300vh;
+  background-size: cover;
+  position: absolute;
+  background-color: black;
+}
+/* HEADER */
+header.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 35px;
+  border-bottom: 2px solid blue;
+  background-image: url(img/1.gif);
+  background-size: auto;
+  background-position-y: -280px;
+}
+header.navbar-container .symbol img {
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 150px;
+}
+
+header.sticky {
+  padding: 20px 100px;
+  background-color: rgb(21, 0, 80);
+  transition: 0.6s;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+  z-index: 9999;
+}
+
+header.sticky .symbol img {
+  width: 200px;
+  transition: 0.6s;
+}
+
+header.navbar-container .nav-list ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.navbar-container .nav-list ul li {
+  position: relative;
+  list-style: none;
+}
+
+header.navbar-container .nav-list ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 7px;
+  font-weight: 500px;
+  transition: 0.5;
+  font-size: 28px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.sticky .nav-list ul li a {
+  text-shadow: 2px 1px rgb(85, 10, 0), 4px 2px rgb(90, 15, 5);
+}
+header.navbar-container .nav-list li:hover a {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px white;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+}
+/* HEADER END*/
+
+/* MAIN CONTENT */
+main {
+  display: flex;
+  padding: 20px;
+  flex: 1;
+}
+main p {
+  font-size: 1.2em;
+  margin-left: -50px;
+  padding-right: 50px;
+}
+
+main article {
+  color: white;
+  margin-left: 100px;
+  margin-top: 30px;
+  padding: 20px;
+  flex: 2;
+  text-align: justify;
+}
+aside {
+  flex: 2;
+  padding: 20px;
+  color: white;
+  text-align: justify;
+}
+aside p {
+  margin-top: 270px;
+  margin-left: 100px;
+}
+aside img {
+  width: 300px;
+  position: absolute;
+  left: 150px;
+}
+main article img {
+  width: 200px;
+  display: flex;
+  position: absolute;
+  right: 80px;
+  opacity: 0.8;
+}
+body section {
+  margin-left: 100px;
+  padding: 40px;
+  color: white;
+  margin-right: 100px;
+}
+main img.bg-main {
+  opacity: 0.5;
+  position: absolute;
+  z-index: -999999;
+  width: 90vw;
+  margin-top: 125px;
+  background-size: cover;
+  height: 20%;
+  left: 5%;
+}
+/* MAIN CONTENT END */
+
+/* GALLERY */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 140px 0 140px;
+}
+
+#GALLERY img.bg-gallery {
+  opacity: 0.5;
+  position: absolute;
+  z-index: -999999;
+  width: 90vw;
+  margin-top: 125px;
+  display: flex;
+  left: 5%;
+  background-size: contain;
+  height: 90vh;
+}
+.container h1 {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 75px;
+}
+
+.gallery-image {
+  width: 200px;
+  height: 350px;
+  transition: transform 400ms ease-out;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 13, 196, 0.4);
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+/* GALLERY END */
+/* PROFILE */
+
+.section1 h2 {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 75px;
+}
+
+.section1 .p1 {
+  margin-top: 60px;
+  margin-left: 250px;
+}
+.section1 p {
+  color: white;
+  padding: 0 140px 0 140px;
+  margin-left: 250px;
+  text-align: justify;
+  font-size: 1.2em;
+}
+.section1 p.summary {
+  padding-bottom: 110px;
+}
+#PROFILE .profile {
+  width: 200px;
+  display: flex;
+  position: absolute;
+  left: 140px;
+  margin-top: 50px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.section1 p .tab1 {
+  padding-left: 57px;
+}
+.section1 p .tab2 {
+  padding-left: 12px;
+}
+.section1 p .tab3 {
+  padding-left: 66px;
+}
+
+/* END OF PROFILE */
+
+footer {
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: -50px;
+  background-image: url(img/road.gif);
+  background-size: contain;
+  font-size: 1.2em;
+}
+footer img.running {
+  height: 100px;
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes neon2 {
+  from {
+    box-shadow: 0 0 4px #228dff, 0 0 5px #228dff, 0 0 6px #228dff,
+      0 0 7px #228dff, 0 0 8px #228dff;
+  }
+  to {
+    box-shadow: 0 0 20px #228dff, 0 0 3px #228dff, 0 0 4px #228dff,
+      0 0 5px #ffffff, 0 0 40px #ffffff;
+  }
+}
+
+/* Medium devices (768px) */
+@media screen and (max-width: 768px) {
+  header.navbar-container .symbol img {
+    left: 5%;
+  }
+
+  main aside img {
+    display: flex;
+    position: absolute;
+    left: 5%;
+  }
+  main aside p {
+    padding-left: 180px;
+    margin-top: -1px;
+    margin-right: -40px;
+  }
+  main article p {
+    padding: 0;
+  }
+  main article img {
+    width: 150px;
+  }
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main img.running {
+    opacity: 0;
+  }
+
+  #HOME .vintage {
+    font-size: 5rem;
+  }
+  #GALLERY .gallery .gallery-image {
+    width: 200px;
+    height: 350px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px 10px 50px;
+    justify-content: space-around;
+  }
+  #GALLERY img.bg-gallery {
+    width: 90vw;
+    height: 100vh;
+    opacity: 0.2;
+  }
+  #GALLERY {
+    padding-top: 150px;
+  }
+}
